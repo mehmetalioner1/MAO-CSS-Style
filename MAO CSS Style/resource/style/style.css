@@ -1,0 +1,593 @@
+/*
+.color1 {color: #00b0ff;}
+.color2 {color: #5dbcff;}
+.color3 {color: #b9cdff;}
+.color4 {color: #ebe2ff;}
+.color5 {color: #fff7ff;}
+*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Lora",serif,sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+    color: #000;
+    overflow: scroll;
+    min-width: 500px;
+}
+
+.navigation {
+    background-color: #ac3b61;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    z-index: 1000;
+}
+
+.navigation li {
+    line-height: 45px;
+    font-size: 20px;
+    display: inline-block;
+}
+.nav-title{
+    margin: 0 15px;
+}
+.navigation li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-size: medium;
+}
+.navigation li a:hover {
+    color: #ddd;
+}
+.logo {
+    margin-left: 5px;
+    color: #fff7ff;
+    float: left;
+}
+.breadcrumb {
+    background-color: #ac3b61;
+    height: 30px;
+    font-size: 20px;
+    width: 100%;
+    position: fixed;
+    top: 46px;
+    left: 0;
+    text-align: left;
+    border:1px solid #fff;
+    border-width: 1px 0;
+    z-index: 1001;
+}
+.breadcrumb li {
+    display: inline-block;
+}
+.bc-title {
+    font-size: small;
+}
+.breadcrumb li.bc-title+li.bc-title::before {
+    content: "> ";
+    color: #fff;
+    font-size: small;
+}
+.breadcrumb li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+.breadcrumb li a:hover {
+    color: #ddd;
+}
+.banner {
+    padding-top: 100px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#banner-description {
+    color: #000;
+    width: 45%;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+}
+#banner-description h1{
+    margin-left: 2vh;
+    font-size:2em;
+}
+#banner-description p{
+    margin-left: 2vh;
+    font-size:1em;
+}
+#banner-img {
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+#banner-img h1 {
+    color: #ac3b61;
+    font-size: 10em;
+    display: inline-block;
+}
+.main {
+    display: block;
+    margin: 10;
+}
+.colors {
+    width: 80%;
+    display: block;
+    margin: 5vh auto;
+    text-align: center;
+    padding: 10vh;
+}
+.colors h1 {
+    line-height: 10vh;
+}
+.colors div {
+    display: inline-block;
+    width: 50vh;
+    text-align: center;
+    padding: 2vh 0;
+}
+.colors div h4 {
+    font-size: small;
+}
+#color-red {
+    background-color: #ff0000;
+}
+#color-green {
+    background-color: #00ff00;
+}
+#color-blue {
+    background-color: #0000ff;
+}
+#color-yellow {
+    background-color: #ffff00;
+}
+#color-cyan {
+    background-color: #00ffff;
+}
+#color-magenta {
+    background-color: #ff00ff;
+}
+#color-orange {
+    background-color: #ffa500;
+}
+#color-purple {
+    background-color: #800080;
+}
+#color-lime {
+    background-color: #00b300;
+}
+#color-pink {
+    background-color: #ffc0cb;
+}
+.fonts {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10vh 0;
+    font-size: medium;
+}
+.fonts h1 {
+    line-height: 10vh;
+}
+.fonts div {
+    vertical-align: top;
+    display: inline-block;
+    width: 70vh;
+    text-align: center;
+    margin: 5vh auto;
+}
+.font h4{
+    font-size: small;
+}
+#font-arial .font-name{
+    font-family: Arial;
+    font-size: 1em;
+}
+#font-arial .font-normal{
+    font-family: Arial;
+    font-weight: normal;
+}
+#font-arial .font-bold{
+    font-family: Arial;
+    font-weight: bold;
+}
+#font-arial .font-normal{
+    font-family: Arial;
+    font-weight: italic;
+}
+#font-verdana .font-name{
+    font-family: Verdana;
+    font-size: 1em;
+}
+#font-verdana .font-normal{
+    font-family: Verdana;
+    font-weight: normal;
+}
+#font-verdana .font-bold{
+    font-family: Verdana;
+    font-weight: bold;
+}
+#font-verdana .font-normal{
+    font-family: Verdana;
+    font-weight: italic;
+}
+#font-tahoma .font-name{
+    font-family: Tahoma;
+    font-size: 1em;
+}
+#font-tahoma .font-normal{
+    font-family: Tahoma;
+    font-weight: normal;
+}
+#font-tahoma .font-bold{
+    font-family: Tahoma;
+    font-weight: bold;
+}
+#font-tahoma .font-normal{
+    font-family: Tahoma;
+    font-weight: italic;
+}
+#font-trebuchet-ms .font-name{
+    font-family: 'Trebuchet MS';
+    font-size: 1em;
+}
+#font-trebuchet-ms .font-normal{
+    font-family: 'Trebuchet MS';
+    font-weight: normal;
+}
+#font-trebuchet-ms .font-bold{
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+}
+#font-trebuchet-ms .font-normal{
+    font-family: 'Trebuchet MS';
+    font-weight: italic;
+}
+#font-times-new-roman .font-name{
+    font-family: 'Times New Roman';
+    font-size: 1em;
+}
+#font-times-new-roman .font-normal{
+    font-family: 'Times New Roman';
+    font-weight: normal;
+}
+#font-times-new-roman .font-bold{
+    font-family: 'Times New Roman';
+    font-weight: bold;
+}
+#font-times-new-roman .font-italic{
+    font-family: 'Times New Roman';
+    font-style: italic;
+}
+#font-georgia .font-name{
+    font-family: Georgia;
+    font-size: 1em;
+}
+#font-georgia .font-normal{
+    font-family: Georgia;
+    font-weight: normal;
+}
+#font-georgia .font-bold{
+    font-family: Georgia;
+    font-weight: bold;
+}
+#font-georgia .font-italic{
+    font-family: Georgia;
+    font-style: italic;
+}
+#font-courier-new .font-name{
+    font-family: 'Courier New';
+    font-size: 1em;
+}
+#font-courier-new .font-normal{
+    font-family: 'Courier New';
+    font-weight: normal;
+}
+#font-courier-new .font-bold{
+    font-family: 'Courier New';
+    font-weight: bold;
+}
+#font-courier-new .font-italic{
+    font-family: 'Courier New';
+    font-style: italic;
+}
+#font-palatino .font-name{
+    font-family: Palatino;
+    font-size: 1em;
+}
+#font-palatino .font-normal{
+    font-family: Palatino;
+    font-weight: normal;
+}
+#font-palatino .font-bold{
+    font-family: Palatino;
+    font-weight: bold;
+}
+#font-palatino .font-italic{
+    font-family: Palatino;
+    font-style: italic;
+}
+#font-gill-sans .font-name{
+    font-family: 'Gill Sans';
+    font-size: 1em;
+}
+#font-gill-sans .font-normal{
+    font-family: 'Gill Sans';
+    font-weight: normal;
+}
+#font-gill-sans .font-bold{
+    font-family: 'Gill Sans';
+    font-weight: bold;
+}
+#font-gill-sans .font-italic{
+    font-family: 'Gill Sans';
+    font-style: italic;
+}
+#font-lucida-sans .font-name{
+    font-family: 'Lucida Sans';
+    font-size: 1em;
+}
+#font-lucida-sans .font-normal{
+    font-family: 'Lucida Sans';
+    font-weight: normal;
+}
+#font-lucida-sans .font-bold{
+    font-family: 'Lucida Sans';
+    font-weight: bold;
+}
+#font-lucida-sans .font-italic{
+    font-family: 'Lucida Sans';
+    font-style: italic;
+}
+
+.box-model {
+    width: 80%;
+    display: block;
+    margin: 5vh auto;
+    text-align: center;
+    padding: 5vh;
+    position: relative;
+}
+
+.box-model h1 {
+    line-height: 10vh;
+}
+
+.box-model-img {
+    background-color: #0000ff;
+    display: block;
+    color: #ff0000;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 8vh;
+    border: 4vh solid #ffa500;
+    margin: 8vh;
+    position: relative;
+}
+.box-model-img::before {
+    content: '';
+    position: absolute;
+    top: -8vh;
+    left: -8vh;
+    right: -8vh;
+    bottom: -8vh;
+    border: 8vh solid #00ff00;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.box-model-description {
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+}
+.box-model-description h4+h4::before {
+    content: "|";
+    padding: 2vh;
+}
+.display {
+    width: 80%;
+    display: block;
+    margin: 5vh auto;
+    text-align: center;
+    padding: 5vh;
+    position: relative;
+}
+.display h1 {
+    padding-bottom: 2vh;
+    width: 100%;
+    border-bottom: 1px solid #000;
+}
+.inline {
+    padding: 5vh;
+    margin: 1em;
+}
+.inline h2 {
+    border-bottom: 1px solid #000;
+    margin-bottom: 4vh;
+}
+.inline h4 {
+    display: inline;
+    background-color: #000000cc;
+    border: 1px solid #000;
+    color: white;
+    font-size: small;
+    padding: 1em;
+}
+.block {
+    padding: 5vh;
+    margin: 1em;
+}
+.block h2 {
+    border-bottom: 1px solid #000;
+    margin-bottom: 4vh;
+}
+.block h4 {
+    display: block;
+    background-color: #000000cc;
+    border: 1px solid #000;
+    color: white;
+    font-size: small;
+    padding: 1em;
+    width: 20vh;
+    margin: auto;
+}
+.inline-block {
+    padding: 5vh;
+    margin: 1em;
+}
+.inline-block h2 {
+    border-bottom: 1px solid #000;
+    margin-bottom: 4vh;
+}
+.inline-block h4 {
+    display: inline-block;
+    background-color: #000000cc;
+    border: 1px solid #000;
+    color: white;
+    font-size: small;
+    padding: 1em;
+}
+.flex {
+    padding: 5vh;
+    margin: 1em;
+}
+.flex h2 {
+    border-bottom: 1px solid #000;
+    margin-bottom: 4vh;
+}
+.flex .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 40vh;
+}
+.flex .flex-item {
+    background-color: #000000cc;
+    border: 1px solid #000;
+    color: white;
+    font-size: small;
+    padding: 1em;
+    flex: 1 1 20%;
+    margin: 1vh;
+    text-align: center;
+}
+.grid {
+    padding: 5vh;
+    margin: 1em;
+}
+.grid h2 {
+    border-bottom: 1px solid #000;
+    margin-bottom: 4vh;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    margin: 2em auto;
+}
+.grid-container h4{
+    display: grid;
+    background-color: #000000cc;
+    border: 1px solid #000;
+    color: white;
+    font-size: small;
+    padding: 1em;
+}
+.positioning {
+    width: 80%;
+    display: block;
+    margin: 5vh auto;
+    text-align: center;
+    padding: 5vh;
+    position: relative;
+}
+.positioning h1 {
+    border-bottom: 1px solid #000;
+    margin-bottom: 4vh;
+}
+.positioning .positioning-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1em;
+    margin: 2em auto;
+    position: relative;
+}
+.positioning .positioning-grid div {
+    border: 1px solid #000;
+    background-color: #000000cc;
+    color: white;
+    font-size: small;
+    padding: 1em;
+}
+.static {
+    position: static; /* Varsayılan pozisyon */
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    left:123vh;
+    width: 20vh;
+}
+.fixed a{
+    text-decoration: none;
+    background-color: #ac3b61;
+    font-size: small;
+    color: #fff;
+    border: 1px solid #000;
+    position: fixed;
+    top: 15vh;
+    right: 0;
+    border-radius: 5%;
+    padding: 1em;
+}
+.fixed a:hover {
+    opacity: 0.8;
+    font-size: 0.8em;
+}
+.sticky {
+    position: sticky;
+    top: 22vh;
+    width: 25vh;
+    background-color: #ac3b61;
+    color: white;
+    font-size: small;
+    padding: 1em;
+}
+.positioning-description h3{
+    text-align: left;
+    font-weight: normal;
+    font-size: medium;
+}
+.positioning-description h3 span{
+    font-weight: bold;
+}
+
+footer {
+    background-color: #ac3b61;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+footer h4 {
+    font-size: 10px;
+    display: inline-block;
+    margin: auto 20px;
+}

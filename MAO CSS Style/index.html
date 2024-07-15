@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MAO-CSS Style</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='resource/style/style.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>
+        <ul class="navigation">
+            <li class="logo"><a href="#">MAO</a></li>
+            <li class="nav-title"><a href="#colors">Colors</a></li>
+            <li class="nav-title"><a href="#fonts">Typography</a></li>
+            <li class="nav-title"><a href="#box-model">Box Model</a></li>
+            <li class="nav-title"><a href="#display">Display</a></li>
+            <li class="nav-title"><a href="#positioning">Positioning</a></li>
+        </ul>
+        <ul class="breadcrumb">
+            <li class="bc-title"><a href="#">Home</a></li>
+            <li class="bc-title"><a href="#">CSS</a></li>
+            <li class="bc-title"><a href="#">CSS implementations</a></li>
+        </ul>
+    </header>
+    <div class="fixed"><a href="#">Get on top</a></div>
+    <section class="banner">
+        <div id="banner-description">
+            <h1>CSS styles implementations</h1>
+            <p>Colours: A page with examples of CSS colours.
+            <br>
+            Typography: Examples of how to set the font, size and colour of text.
+            <br>
+            Box Model: Examples explaining the use of box model properties such as padding, margin and border.
+            <br>
+            Display: Check how elements look by changing their display properties.
+            <br>
+            Positioning: Examples that determine how elements are positioned on the page.</p>
+        </div>
+        <div id="banner-img">
+            <h1>&lt;/&gt;</h1>
+        </div>
+    </section>
+    <section class="main">
+        <div>
+            <div class="sticky">You are in Colors</div>
+            <div id="colors" class="colors">
+                <h1>Colors</h1>
+                <div id="color-red">
+                    <h4 class="color-name">Red</h4>
+                    <h4 class="hex-code">#FF0000</h4>
+                    <h4 class="rgb-code">rgb(255, 0, 0)</h4>
+                </div>
+                <div id="color-green">
+                    <h4 class="color-name">Green</h4>
+                    <h4 class="hex-code">#00FF00</h4>
+                    <h4 class="rgb-code">rgb(0, 128, 0)</h4>
+                </div>
+                <div id="color-blue">
+                    <h4 class="color-name">Blue</h4>
+                    <h4 class="hex-code">#0000FF</h4>
+                    <h4 class="rgb-code">rgb(0, 0, 255)</h4>
+                </div>
+                <div id="color-yellow">
+                    <h4 class="color-name">Yellow</h4>
+                    <h4 class="hex-code">#FFFF00</h4>
+                    <h4 class="rgb-code">rgb(255, 255, 0)</h4>
+                </div>
+                <div id="color-cyan">
+                    <h4 class="color-name">Cyan</h4>
+                    <h4 class="hex-code">#00FFFF</h4>
+                    <h4 class="rgb-code">rgb(0, 255, 255)</h4>
+                </div>
+                <div id="color-magenta">
+                    <h4 class="color-name">Magenta</h4>
+                    <h4 class="hex-code">#FF00FF</h4>
+                    <h4 class="rgb-code">rgb(255, 0, 255)</h4>
+                </div>
+                <div id="color-orange">
+                    <h4 class="color-name">Orange</h4>
+                    <h4 class="hex-code">#FFA500</h4>
+                    <h4 class="rgb-code">rgb(255, 165, 0)</h4>
+                </div>
+                <div id="color-purple">
+                    <h4 class="color-name">Purple</h4>
+                    <h4 class="hex-code">#800080</h4>
+                    <h4 class="rgb-code">rgb(128, 0, 128)</h4>
+                </div>
+                <div id="color-lime">
+                    <h4 class="color-name">Lime</h4>
+                    <h4 class="hex-code">#00FF00</h4>
+                    <h4 class="rgb-code">rgb(0, 255, 0)</h4>
+                </div>
+                <div id="color-pink">
+                    <h4 class="color-name">Pink</h4>
+                    <h4 class="hex-code">#FFC0CB</h4>
+                    <h4 class="rgb-code">rgb(255, 192, 203)</h4>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="sticky">You are in Typography</div>
+            <div id="fonts" class="fonts">
+                <h1>Typography-Fonts</h1>
+                <div id="font-arial" class="font">
+                    <h4 class="font-name">Arial</h4>
+                    <h4 class="font-normal">This text is written in Arial normal font.</h4>
+                    <h4 class="font-bold">This text is written in Arial bold font.</h4>
+                    <h4 class="font-italic">This text is written in Arial italic font.</h4>
+                </div>
+                <div id="font-verdana" class="font">
+                    <h4 class="font-name">Verdana</h4>
+                    <h4 class="font-normal">This text is written in Verdana normal font.</h4>
+                    <h4 class="font-bold">This text is written in Verdana bold font.</h4>
+                    <h4 class="font-italic">This text is written in Verdana italic font.</h4>
+                </div>
+                <div id="font-tahoma" class="font">
+                    <h4 class="font-name">Tahoma</h4>
+                    <h4 class="font-normal">This text is written in Tahoma normal font.</h4>
+                    <h4 class="font-bold">This text is written in Tahoma bold font.</h4>
+                    <h4 class="font-italic">This text is written in Tahoma italic font.</h4>
+                </div>
+                <div id="font-trebuchet-ms" class="font">
+                    <h4 class="font-name">Trebuchet MS</h4>
+                    <h4 class="font-normal">This text is written in Trebuchet MS normal font.</h4>
+                    <h4 class="font-bold">This text is written in Trebuchet MS bold font.</h4>
+                    <h4 class="font-italic">This text is written in Trebuchet MS italic font.</h4>
+                </div>
+                <div id="font-times-new-roman" class="font">
+                    <h4 class="font-name">Times New Roman</h4>
+                    <h4 class="font-normal">This text is written in Times New Roman normal font.</h4>
+                    <h4 class="font-bold">This text is written in Times New Roman bold font.</h4>
+                    <h4 class="font-italic">This text is written in Times New Roman italic font.</h4>
+                </div>
+                <div id="font-georgia" class="font">
+                    <h4 class="font-name">Georgia</h4>
+                    <h4 class="font-normal">This text is written in Georgia normal font.</h4>
+                    <h4 class="font-bold">This text is written in Georgia bold font.</h4>
+                    <h4 class="font-italic">This text is written in Georgia italic font.</h4>
+                </div>
+                <div id="font-courier-new" class="font">
+                    <h4 class="font-name">Courier New</h4>
+                    <h4 class="font-normal">This text is written in Courier New normal font.</h4>
+                    <h4 class="font-bold">This text is written in Courier New bold font.</h4>
+                    <h4 class="font-italic">This text is written in Courier New italic font.</h4>
+                </div>            
+                <div id="font-palatino" class="font">
+                    <h4 class="font-name">Palatino</h4>
+                    <h4 class="font-normal">This text is written in Palatino normal font.</h4>
+                    <h4 class="font-bold">This text is written in Palatino bold font.</h4>
+                    <h4 class="font-italic">This text is written in Palatino italic font.</h4>
+                </div>
+                <div id="font-gill-sans" class="font">
+                    <h4 class="font-name">Gill Sans</h4>
+                    <h4 class="font-normal">This text is written in Gill Sans normal font.</h4>
+                    <h4 class="font-bold">This text is written in Gill Sans bold font.</h4>
+                    <h4 class="font-italic">This text is written in Gill Sans italic font.</h4>
+                </div>
+                <div id="font-lucida-sans" class="font">
+                    <h4 class="font-name">Lucida Sans</h4>
+                    <h4 class="font-normal">This text is written in Lucida Sans normal font.</h4>
+                    <h4 class="font-bold">This text is written in Lucida Sans bold font.</h4>
+                    <h4 class="font-italic">This text is written in Lucida Sans italic font.</h4>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="sticky">You are in Box Model</div>
+            <div id="box-model" class="box-model">
+                <h1>Box Model</h1>
+                <div class="box-model-img">
+                    Content
+                </div>
+                <div class="box-model-description">
+                    <h4>Red: Content</h4>
+                    <h4>Blue: Padding</h4>
+                    <h4>Orange: Border</h4>
+                    <h4>Green: Margin</h4>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="sticky">You are in Display</div>
+            <div id="display" class="display">  
+                <h1>Display</h1>
+                <div class="inline">
+                    <h2>inline</h2>
+                    <h4>element</h4>
+                    <h4>element</h4>
+                    <h4>element</h4>
+                    <h4>element</h4>
+                    <h4>element</h4>
+                    <h4>element</h4>
+                    <h4>element</h4>
+                    <h4>element</h4>
+                </div>
+                <div class="block">
+                    <h2>block</h2>
+                    <h4>element</h4>
+                    <h4>element</h4>
+                    <h4>element</h4>
+                    <h4>element</h4>
+                    <h4>element</h4>
+                    <h4>element</h4>
+                    <h4>element</h4>
+                    <h4>element</h4>
+                </div>
+                <div class="inline-block">
+                    <h2>Inline-Block</h2>
+                    <h4>element</h4>
+                    <h4>element</h4>
+                    <h4>element</h4>
+                    <h4>element</h4>
+                    <h4>element</h4>
+                    <h4>element</h4>
+                    <h4>element</h4>
+                    <h4>element</h4>
+                </div>
+                <div class="flex">
+                    <h2>Flex</h2>
+                    <div class="flex-container">
+                        <div class="flex-item">element</div>
+                        <div class="flex-item">element</div>
+                        <div class="flex-item">element</div>
+                        <div class="flex-item">element</div>
+                        <div class="flex-item">element</div>
+                        <div class="flex-item">element</div>
+                        <div class="flex-item">element</div>
+                        <div class="flex-item">element</div>
+                        <div class="flex-item">element</div>
+                        <div class="flex-item">element</div>
+                    </div>
+                </div>
+                <div class="grid">
+                    <h2>Grid</h2>
+                    <div class="grid-container">
+                        <h4>element</h4>
+                        <h4>element</h4>
+                        <h4>element</h4>
+                        <h4>element</h4>
+                        <h4>element</h4>
+                        <h4>element</h4>
+                        <h4>element</h4>
+                        <h4>element</h4>
+                        <h4>element</h4>
+                        <h4>element</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="sticky">You are in Positioning</div>
+            <div id="positioning" class="positioning">
+                <h1>Positioning</h1>
+                <div class="positioning-grid">
+                    <div class="static">Static</div>
+                    <div class="relative">Relative</div>
+                    <div class="absolute">Absolute</div>
+                    <div>Fixed</div>
+                    <div>Sticky</div>
+                </div>
+                <div class="positioning-description">
+                    <h3><span>Static:</span> It remains at the point where it is added in the document flow. Its position can be influenced by properties like display, margin, and padding.</h1>
+                    <h3><span>Relative: </span>Positioned relative to its normal position in the document flow. It can be moved using top, right, bottom, and left properties, without affecting the positions of surrounding elements.</h3>
+                    <h3><span>Absolute:</span> Positioned relative to the nearest positioned ancestor (or the initial containing block if no positioned ancestor is found). It's taken out of the normal document flow. It can be precisely placed using top, right, bottom, and left properties.</h3>
+                    <h3><span>Fixed:</span> Positioned relative to the viewport or the initial containing block. It remains fixed in its position even when the page is scrolled. Commonly used for elements like headers or navigation bars that should always be visible. Its position can be adjusted using top, right, bottom, and left.</h3>
+                    <h3><span>Sticky:</span> Initially positioned according to the normal flow of the document, but behaves like fixed within a specified scrollable area. It remains in its normal position until it reaches a specified point (e.g., top of the viewport) as the page is scrolled. This behavior is controlled by setting top, right, bottom, or left properties to define the sticky point. </h3>   
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h4>Posted from: Mehmet Ali ÖNER</h4>
+        <h4>mehmtali2200@gmail.com</h4>
+    </footer>
+</body>
+</html>
